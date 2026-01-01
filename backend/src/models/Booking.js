@@ -1,3 +1,7 @@
+/**
+ * Booking Model Schema
+ * Defines the MongoDB schema for bus ticket bookings with user and bus references
+ */
 const mongoose = require('mongoose');
 
 const bookingSchema = new mongoose.Schema({
