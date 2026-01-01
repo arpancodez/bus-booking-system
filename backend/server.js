@@ -1,11 +1,17 @@
+/**
+ * Bus Booking System - Backend Server Entry Point
+ * Express server configuration with middleware, routes, and MongoDB connection
+ */
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
+// Load environment configuration
 const rateLimit = require('express-rate-limit');
 require('dotenv').config();
 
+// Database and middleware configuration
 const connectDB = require('./src/config/database');
 const errorHandler = require('./src/middleware/errorHandler');
 const busRoutes = require('./src/routes/busRoutes');
