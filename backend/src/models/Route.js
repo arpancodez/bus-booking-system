@@ -1,5 +1,9 @@
 const mongoose = require('mongoose');
 
+/**
+ * Route Model Schema
+ * Defines the MongoDB schema for bus routes with location and destination details
+ */
 const routeSchema = new mongoose.Schema({
   routeName: {
     type: String,
