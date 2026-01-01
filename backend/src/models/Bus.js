@@ -1,3 +1,7 @@
+/**
+ * Bus Model Schema
+ * Defines the MongoDB schema for buses including seating, type, and pricing information
+ */
 const mongoose = require('mongoose');
 
 const seatSchema = new mongoose.Schema({
