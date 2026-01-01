@@ -1,3 +1,7 @@
+/**
+ * User Model Schema
+ * Defines the MongoDB schema for user authentication and profile management
+ */
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
